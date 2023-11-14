@@ -123,7 +123,7 @@ if __name__ == "__main__":
 # Load glove embeddings
 glove_embeddings = load_glove_embeddings()
 
-images_words = ["flower","vehicle","tree","mountain","building"]
+image_words = ["flower","vehicle","tree","mountain","building"]
 
 # Load in images
 # i know this might be the least efficient way to do this but it get's the job done :/
