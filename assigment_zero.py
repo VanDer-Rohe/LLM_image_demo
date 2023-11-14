@@ -143,7 +143,7 @@ text_search = st.text_input("", value="")
 if text_search:
     input_embedding = averaged_glove_embeddings(text_search, glove_embeddings)
     cosine_sim = {}
-    for index in range(len(images_words)):
+    for index in range(len(image_words)):
         cosine_sim[index] = cosine_similarity(input_embedding, glove_embeddings[images_words[index]])
 
 
