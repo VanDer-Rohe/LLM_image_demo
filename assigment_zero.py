@@ -126,11 +126,11 @@ images_words = ["flower","vehicle","tree","mountain","building"]
 
 # Load in images
 # i know this might be the least efficient way to do this but it get's the job done :/
-flower = Image.open('sample_data/Images/Flower.png')
-vehicle = Image.open('sample_data/Images/Vehicle.png')
-tree = Image.open('sample_data/Images/Tree.png')
-mountain = Image.open('sample_data/Images/Mountain.png')
-building = Image.open('sample_data/Images/Building.png')
+flower = Image.open(r'sample_data/Images/Flower.png')
+vehicle = Image.open(r'sample_data/Images/Vehicle.png')
+tree = Image.open(r'sample_data/Images/Tree.png')
+mountain = Image.open(r'sample_data/Images/Mountain.png')
+building = Image.open(r'sample_data/Images/Building.png')
 
 # Text Search
 st.title("Search Based Retrieval Demo")
