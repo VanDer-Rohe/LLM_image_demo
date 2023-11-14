@@ -144,7 +144,7 @@ if text_search:
     input_embedding = averaged_glove_embeddings(text_search, glove_embeddings)
     cosine_sim = {}
     for index in range(len(image_words)):
-        cosine_sim[index] = cosine_similarity(input_embedding, glove_embeddings[images_words[index]])
+        cosine_sim[index] = cosine_similarity(input_embedding, glove_embeddings[image_words[index]])
 
 
     # Sort the cosine similarities
@@ -165,7 +165,7 @@ if text_search:
     
 
     st.write("(My search uses glove embeddings)")
-    st.write(f"Closest word I have between flower, mountain, tree, car and building for your input is: {images_words[sorted_cosine_sim[0]]}")
-    st.subheader(images_words[sorted_cosine_sim[0]])
+    st.write(f"Closest word I have between flower, mountain, tree, car and building for your input is: {image_words[sorted_cosine_sim[0]]}")
+    st.subheader(image_words[sorted_cosine_sim[0]])
     st.image(closest_image, "Closest matching image")
     st.write("")
