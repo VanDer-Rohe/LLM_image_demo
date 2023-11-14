@@ -73,7 +73,7 @@ def load_glove_embeddings(glove_path="sample_data/embedding_dict.pkl"):
 
     try:
         with open(glove_path,"rb") as f:
-        embeddings_dict = pickle.load(f)
+            embeddings_dict = pickle.load(f)
 
         print("Successfully un-pickled data")
         return embeddings_dict
