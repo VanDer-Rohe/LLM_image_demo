@@ -71,11 +71,14 @@ def load_glove_embeddings(glove_path="sample_data/embedding_dict.pkl"):
     Now load that pickle file back in this function
     """
 
-    with open(glove_path,"rb") as f:
+    try:
+        with open(glove_path,"rb") as f:
         embeddings_dict = pickle.load(f)
 
-    print("Successfully un-pickled data")
-    return embeddings_dict
+        print("Successfully un-pickled data")
+        return embeddings_dict
+    except Exception as error:
+        print("failed to load Glove Embeddings", error)
 
 
 # Get Averaged Glove Embedding of a sentence
