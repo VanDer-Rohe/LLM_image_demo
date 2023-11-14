@@ -14,6 +14,7 @@ import numpy as np
 import numpy.linalg as la
 import pickle
 from math import sqrt
+from PIL import Image
 
 """
 This is a starter code for Assignment 0 of the course, "Hands-on Master Class on LLMs and ChatGPT | Autumn 2023"
